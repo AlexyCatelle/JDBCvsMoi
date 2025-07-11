@@ -15,9 +15,9 @@ private static CustomerService customerService = new CustomerService();
 boolean running = true;
 while (running) {
     System.out.println("1. Créer un client.");
-    System.out.println("2. Dépot d'argent sur le compte.");
-    System.out.println("3. Retrait d'argent sur le compte.");
-    System.out.println("4. Afficher le compte d'un client.");
+    System.out.println("2. Afficher les comptes d'un client.");
+    System.out.println("3. Dépot d'argent sur le compte.");
+    System.out.println("4. Retrait d'argent sur le compte.");
     System.out.println("5. Quitter");
     System.out.print("Choix : ");
 
@@ -29,13 +29,13 @@ while (running) {
             createCustomer();
             break;
             case 2:
-                System.out.println("Ici dépot argent sur le compte.");
+                DisplayCustomer();
                 break;
                 case 3:
                     System.out.println("Ici dépot argent sur le compte.");
                     break;
                     case 4:
-                        DisplayCustomer();
+                        System.out.println("Ici retrait argent sur le compte.");
                         break;
                         case 5:
                             running = false;

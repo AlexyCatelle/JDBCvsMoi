@@ -1,7 +1,18 @@
 package jdbcExo1.entity;
-// Afficher le compte avec les infos clients
-// Ajout d'une operation de type DEPOT
-// Ajout d'une operation de type RETRAIT
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+@Data
 
 public class BankAccount {
+    private int id;
+    private int customerId;
+    private double totalAmount;
 }

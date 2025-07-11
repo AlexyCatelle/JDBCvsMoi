@@ -21,7 +21,7 @@ public class CustomerService {
                 .lastName(lastName)
                 .phone(phone)
                 .build();
-        return customerDAO.save(customer) != null;
+        return customerDAO.createCustomer(customer) != null;
     }
 
     public Boolean updateCustomer(Customer customer) {

@@ -33,7 +33,7 @@ public class CustomerDAO {
         }
     }
 
-    public Customer save(Customer customer) {
+    public Customer createCustomer(Customer customer) {
 
         try {
 connection = DatabaseManager.getConnection();
